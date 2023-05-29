@@ -43,9 +43,8 @@ The first thing was creating two main elements in the page, the main one with th
 The structure was pretty easy, the element is made up of two column, the height is decided from the image on the right, so setting it
 to the right value set the dimension right.\
 After that, I strucuted the element on the left column and went to style it with CSS, 
-the most important detail for the page is for the main heading to be on one line, so I worked around that to set my decide my break points. 
-Going to Javascript instead, I needed the validation for the email to be working since the entire input field changes on error
-
+the most important detail for the page is for the main heading to be on one line, so I worked around that to set my decide my break points. \
+Going to Javascript instead, I needed the validation for the email to be working since the entire input field changes on error, other than that it was basically just handling the main element swap, toggling the hidden class I had set in CSS
 
 ### Built with
 
@@ -55,10 +54,7 @@ Going to Javascript instead, I needed the validation for the email to be working
 - CSS Grid
 - Javascript
 
-### What I learned
-
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@AngeloMar98]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/AngeloMar98))
 
-## Acknowledgments
