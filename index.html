@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="container subscribe-box grid grid--2cols">
+        <div class="grid-col">
+          <div class="grid-col-inner">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="features-list">
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+            <form id="sub-form">
+              <div class="label-container">
+                <label for="email-input">Email address</label>
+                <label id="invalid-email" for="email-input"
+                  >Valid email required</label
+                >
+              </div>
+
+              <input
+                onfocusout="validateEmailAddress(this)"
+                id="email-input"
+                placeholder="email@company.com"
+                required
+                type="email"
+              />
+            </form>
+            <button class="btn submit--btn" form="sub-form">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
+
+        <div class="image-chart" alt="graphs and charts"></div>
+      </div>
+      <div class="hidden sub-success">
+        <div class="sub-success-inner">
+          <div>
+            <img alt="checkmark" src="assets/images/icon-success.svg" />
+            <h1>Thanks for subscribing!</h1>
+            <p>
+              A confirmation email has been sent to
+              <strong>ash@loremcompany.com</strong>. Please open it and click
+              the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button class="btn dismiss--btn">Dismiss message</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
