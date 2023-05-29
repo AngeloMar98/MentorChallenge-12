@@ -21,7 +21,7 @@ dismissBtn.addEventListener("click", function () {
 function validateEmailAddress(input) {
   let validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  if (!input.value.match(validRegex)) {
+  if (!input.value.match(validRegex) && input.value !== "") {
     /* CHANGING INPUT FIELD COLOR */
 
     document.getElementById("invalid-email").style.display = "inline-block";
@@ -33,7 +33,7 @@ function validateEmailAddress(input) {
 
     document.getElementById("email-input").style.backgroundColor =
       "hsl(4, 100%, 67%,0.15)";
-  } else {
+  } else if (input.value.match(validRegex)) {
     /* TOGGLE THE SUCCESS SCREEN */
     subBox.classList.toggle("hidden");
     subSuc.classList.toggle("hidden");
