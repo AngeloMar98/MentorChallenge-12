@@ -35,7 +35,7 @@ Users should be able to:
 ![](https://i.imgur.com/ue1dW3L.png)
 
 ### Links
-- Live Site URL: [](https://mentor-challenge-12.vercel.app/)
+- Live Site URL: [https://mentor-challenge-12.vercel.app/](https://mentor-challenge-12.vercel.app/)
 
 ## My process
 
