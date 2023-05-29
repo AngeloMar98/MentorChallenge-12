@@ -35,11 +35,17 @@ Users should be able to:
 ![](https://i.imgur.com/ue1dW3L.png)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://mentor-challenge-12.vercel.app/)
 
 ## My process
+
+The first thing was creating two main elements in the page, the main one with the subscription form and the success page.
+The structure was pretty easy, the element is made up of two column, the height is decided from the image on the right, so setting it
+to the right value set the dimension right.
+After that, I strucuted the element on the left column and went to style it with CSS, 
+the most important detail for the page is for the main heading to be on one line, so I worked around that to set my decide my break points. 
+Going to Javascript instead, I needed the validation for the email to be working since the entire input field changes on error
+
 
 ### Built with
 
