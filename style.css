@@ -37,7 +37,6 @@ h1 {
   font-size: 5.4rem;
   margin-bottom: 2.4rem;
   line-height: 1;
-  color: hsl(234, 29%, 20%);
 }
 
 .container {
@@ -55,8 +54,7 @@ h1 {
   gap: 1.8rem;
 }
 
-.image-chart {
-  content: url("assets/images/illustration-sign-up-desktop.svg");
+.image-chart img {
   max-width: 31.5rem;
 }
 
@@ -65,7 +63,6 @@ h1 {
 .subscribe-box {
   border-radius: 18px;
   padding: 1.8rem;
-  overflow: hidden;
 }
 
 .grid-col {
@@ -187,7 +184,7 @@ input::placeholder {
   }
 }
 
-@media (max-width: 42rem) {
+@media (max-width: 42em) {
   html {
     font-size: 55%;
   }
@@ -210,17 +207,18 @@ input::placeholder {
   }
 
   .image-chart {
-    justify-self: center;
-    content: url(assets/images/illustration-sign-up-mobile.svg);
-    max-width: 100%;
-    scale: 1.2;
     order: -1;
+    justify-self: center;
+  }
+
+  .image-chart img {
+    max-width: 100%;
+    scale: 1.1;
     margin-bottom: 3.4rem;
   }
 
   .sub-success {
     height: 100vh;
-
     margin: 0 auto;
     width: 100%;
   }
